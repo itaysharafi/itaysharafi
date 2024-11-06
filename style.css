@@ -1,0 +1,108 @@
+body{
+    animation-name: changeBackgroundImage;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+img{
+    width: 200px;
+    height: 200px;
+    
+    /* border-radius: 50%; */
+}
+#box1{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#box2{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#enemy{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation-name: drivee;
+    animation-duration:1.5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+#player{
+    position: absolute;
+    left: 0;
+   bottom: 5px;   
+}
+#continer{
+    margin: auto;
+    text-align: center;
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2S;
+    animation-iteration-count: infinite;
+}
+button{
+    
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+        border-radius: 50%;
+    position: absolute;
+    transition:  all 0.5s  ease-out;
+    text-align: center;
+    margin: auto;
+}
+.jump{
+    animation-name: jumping;
+    animation-duration: 1s;
+
+
+}#overId {
+    font-size: 100px;
+    text-align: center;
+    color: red;
+}
+#result {
+    font-size: 50px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+#box{
+    margin: auto;
+    text-align: center;
+}
+
+#best {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+@keyframes jumping {
+    0%{bottom: 0;}
+    50%{bottom: 500px;}
+    100%{bottom: 100px;}
+}
+  @keyframes drivee {
+    0%{right: 0%;}
+    50%{right:50%;}
+
+    100%{right: 100%;}
+  }
+   @keyframes changeBackgroundImage {
+   0%{background-image: url("https://m.media-amazon.com/images/I/61N9SjQ9opL._AC_UF894,1000_QL80_.jpg");background-size: cover;}
+    50%{background-image: url("https://m.media-amazon.com/images/I/61N9SjQ9opL._AC_UF894,1000_QL80_.jpg");background-size: cover;}
+
+    100%{background-image: url("https://m.media-amazon.com/images/I/61N9SjQ9opL._AC_UF894,1000_QL80_.jpg");background-size: cover;}
+  } 
